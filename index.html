@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .first-frame {
+        height: 70hv;
+      }
+      .background-image {
+        /* position: relative; */
+        width: 100vw;
+
+        /* width: 100vw; */
+      }
+
+      .Heading {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        /* justify-content: center;
+      align-items: center; */
+        height: 40vh;
+        top: 30%;
+        left: 70%;
+        bottom: 50%;
+        /* right: 20%; */
+        /* bottom: 40%; */
+        margin: 5px;
+        padding: 5px;
+      }
+      .Heading> div{
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-weight: 1000;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="first-frame">
+      <div class="img-background">
+        <img
+          src="./resources/images/Background image.jpg  "
+          alt="Background Image"
+          class="background-image"
+        />
+        <div class="Heading">
+          <div>Hello!</div>
+          <div id="element">I am Amitesh Thakur</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Web Developer",
+          "<i>Java Developer",
+        //   "<i>MERN Stack Developer",
+        //   "<i>Content Creator.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
